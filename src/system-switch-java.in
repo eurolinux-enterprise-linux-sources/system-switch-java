@@ -20,7 +20,7 @@
 import signal
 import sys
 
-DIRECTORY = '/usr/local/share/system-switch-java/'
+DIRECTORY = '@prefix@/share/@PACKAGE_NAME@/'
 if not DIRECTORY in sys.path:
     sys.path.append(DIRECTORY)
 import switch_java_boot

@@ -1,26 +1,29 @@
-# translation of pl.po to Polish
-# Piotr Drąg <piotrdrag@gmail.com>, 2008.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Turkish translations for system-switch-java.
+# Hasan Alp İNAN <hasanalpinan@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: pl\n"
+"Project-Id-Version: system-switch-java\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-03 18:39-0400\n"
-"PO-Revision-Date: 2009-10-02 13:08+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
+"PO-Revision-Date: 2011-02-05 14:20+0200\n"
+"Last-Translator: Hasan Alp İNAN <hasanalpinan@gmail.com>\n"
+"Language-Team: Turkish <none>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../switch_java_functions.py.in:34
 msgid "display text interface even if graphics display is available"
-msgstr ""
-"wyświetla interfejs tekstowy nawet, jeśli ekran graficzny jest dostępny"
+msgstr "Grafik gösterim mevcut olsa bile metin ara birimini göster"
 
 #: ../switch_java_functions.py.in:37
 msgid "An attempt to parse /var/lib/alternatives/java failed."
-msgstr "Próba przetworzenia /var/lib/alternatives/java nie powiodła się."
+msgstr "/var/lib/alternatives/java ayrıştırma denemesi başarısız oldu."
 
 #: ../switch_java_functions.py.in:40
 msgid ""
@@ -34,46 +37,48 @@ msgid ""
 "\n"
 "/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
 msgstr ""
-"Nie odnaleziono obsługiwanych pakietów Java. Obsługiwane pakiety Java to te, "
-"które instalują plik w formie:\n"
+"Desteklenen Java paketi bulunamadı. Desteklenen bir Java paketi olduğunda"
+"şu dosya biçiminde kurulur:\n"
 "\n"
-"/usr/lib/jvm/jre-$versja-$producent/bin/java\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
 "\n"
-"Na przykład java-1.4.2-gcj-compat jest obsługiwanym pakietem, ponieważ "
-"instaluje:\n"
+"Örneğin, java-1.4.2-gcj-compat desteklenen bir pakettir çünkü "
+"şu biçimde kurulur:\n"
 "\n"
 "/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
 
 #: ../switch_java_functions.py.in:51
 msgid "Select the default Java toolset for the system."
-msgstr "Proszę wybrać domyślny zestaw narzędzi Java dla systemu."
+msgstr "Sistemin ön tanımlı Java araç takımını seçin."
 
 #: ../switch_java_functions.py.in:52
 msgid "Java Toolset Configuration"
-msgstr "Konfiguracja zestawu narzędzi Java"
+msgstr "Java Aracı Yapılandırması"
 
 #: ../switch_java_functions.py.in:53
 msgid "Installed Java Toolsets"
-msgstr "Zainstalowane zestawy narzędzi Java"
+msgstr "Yüklü Java Araç Takımları"
 
 #: ../switch_java_functions.py.in:54
 msgid "The default Java toolset can only be configured by the root user."
 msgstr ""
-"Domyślny zestaw narzędzi Java może być konfigurowany tylko przez użytkownika "
-"root."
+"Ön tanımlı Java araç takımı sadece root kullanıcısı tarafından "
+"yapılandırılabilir."
 
 #: ../switch_java_functions.py.in:57
 msgid "OK"
-msgstr "OK"
+msgstr "Tamam"
 
 #: ../switch_java_functions.py.in:58
 msgid "Close"
-msgstr "Zamknij"
+msgstr "Kapat"
 
 #: ../system-switch-java.desktop.in.h:1
 msgid "Change the default Java toolset"
-msgstr "Zmiana domyślnego zestawu narzędzi Java"
+msgstr "Ön tanımlı Java araç takımını değiştir"
 
 #: ../system-switch-java.desktop.in.h:2
 msgid "Java Toolset"
-msgstr "Zestaw narzędzi Java"
+msgstr "Java Araç Takımı"
+
+

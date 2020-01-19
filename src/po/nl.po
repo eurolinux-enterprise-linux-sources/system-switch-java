@@ -1,24 +1,27 @@
 # Dutch translation of system-switch-java.
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the system-switch-java package.
-#
 # Peter van Egdom <p.van.egdom@gmail.com>, 2008.
-# 
+# Geert Warrink <geert.warrink@onsnet.nu>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-switch-java\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-26 14:58+0000\n"
-"PO-Revision-Date: 2008-09-27 00:11+0200\n"
-"Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
-"Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2010-07-11 13:13+0200\n"
+"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"Language-Team: Fedora\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #: ../switch_java_functions.py.in:34
 msgid "display text interface even if graphics display is available"
-msgstr "Tekstinterface weergeven, zelfs als de grafische display beschikbaar is"
+msgstr ""
+"Tekst interface weergeven, zelfs als het grafische display beschikbaar is"
 
 #: ../switch_java_functions.py.in:37
 msgid "An attempt to parse /var/lib/alternatives/java failed."
@@ -36,8 +39,8 @@ msgid ""
 "\n"
 "/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
 msgstr ""
-"Er zijn geen ondersteunde Java-pakketten gevonden. Een ondersteund Java-pakket "
-"is een pakket dat een bestand installeert in de vorm:\n"
+"Er zijn geen ondersteunde Java pakketten gevonden. Een ondersteund Java "
+"pakket is een pakket dat een bestand installeert in de vorm:\n"
 "\n"
 "/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
 "\n"
@@ -48,21 +51,21 @@ msgstr ""
 
 #: ../switch_java_functions.py.in:51
 msgid "Select the default Java toolset for the system."
-msgstr "Selecteer de standaard Java-toolset voor het systeem."
+msgstr "Selecteer de standaard Java toolset voor het systeem."
 
 #: ../switch_java_functions.py.in:52
 msgid "Java Toolset Configuration"
-msgstr "Java-toolset configuratie"
+msgstr "Java toolset configuratie"
 
 #: ../switch_java_functions.py.in:53
 msgid "Installed Java Toolsets"
-msgstr "Geïnstalleerde Java-toolsets"
+msgstr "Geïnstalleerde Java toolsets"
 
 #: ../switch_java_functions.py.in:54
 msgid "The default Java toolset can only be configured by the root user."
 msgstr ""
-"De standaard Java-toolset kan alleen worden geconfigureerd door de "
-"root-gebruiker."
+"De standaard Java toolset kan alleen worden geconfigureerd door de root "
+"gebruiker."
 
 #: ../switch_java_functions.py.in:57
 msgid "OK"
@@ -74,8 +77,8 @@ msgstr "Sluiten"
 
 #: ../system-switch-java.desktop.in.h:1
 msgid "Change the default Java toolset"
-msgstr "De standaard Java-toolset veranderen"
+msgstr "De standaard Java toolset veranderen"
 
 #: ../system-switch-java.desktop.in.h:2
 msgid "Java Toolset"
-msgstr "Java-toolset"
+msgstr "Java toolset"

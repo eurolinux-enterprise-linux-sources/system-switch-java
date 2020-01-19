@@ -1,6 +1,6 @@
 Name: system-switch-java
-Version: 1.1.5
-Release: 11%{?dist}
+Version: 1.1.7.1
+Release: 0%{?dist}
 Summary: A tool for changing the default Java toolset
 
 %define baseurl https://fedorahosted.org
@@ -8,14 +8,7 @@ Summary: A tool for changing the default Java toolset
 Group: Applications/System
 License: GPLv2+ and BSD
 URL: %{baseurl}/%{name}
-Source0: %{baseurl}/releases/s/y/system-switch-java/%{name}-%{version}.tar.gz
-# Patch is upstream but not in a release https://fedorahosted.org/system-switch-java/changeset/80
-Patch0: new-jdk-paths.patch
-Patch1: jre-java.patch
-Patch2: disabledUnderline.patch
-Patch3: tuiWidth.patch
-Patch4: version-fix.patch
-Patch5: fix-arch-detection.patch
+Source0: %{baseurl}/releases/s/y/system-switch-java/%{name}-%{version}.tar.xz
 
 BuildArch: noarch
 
@@ -39,12 +32,6 @@ the default Java toolset for the system.
 
 %prep
 %setup -q
-#%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
 
 %build
 %configure
@@ -67,6 +54,8 @@ desktop-file-install \
 %{_datadir}/%{name}/switch_java_functions.py*
 %{_datadir}/%{name}/switch_java_gui.py*
 %{_datadir}/%{name}/switch_java_tui.py*
+%{_datadir}/%{name}/switch_java_globals.py*
+%{_datadir}/%{name}/switch_java_boot.py*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/%{name}/system-switch-java.glade
@@ -74,6 +63,22 @@ desktop-file-install \
 %config(noreplace) /etc/security/console.apps/%{name}
 
 %changelog
+* Thu Aug 04 2016 Jiri Vanek <jvanek@redhat.com> - 1.1.7.1-1
+- updated to latest upstream, removed upstreamed patches
+- Resolves: rhbz#1283904
+- Resolves: rhbz#1080838
+
+* Tue Apr 26 2016 Jiri Vanek <jvanek@redhat.com> - 1.1.6-3
+- added upsteam patch 107 for better jdk9 support
+- Resolves: rhbz#1283904
+- Resolves: rhbz#1080838
+
+* Tue Nov 24 2015 Jiri Vanek <jvanek@redhat.com> - 1.1.6-1
+- updated to upstream release of 1.1.6
+- removed all upstreamed patches
+- Resolves: rhbz#1283904
+- Resolves: rhbz#1080838
+
 * Thu Mar 27 2014 Omair Majid <omajid@redhat.com> - 1.1.5-11
 - Detect arch for newer-style directory names correctly
 - Resolves: rhbz#1078313

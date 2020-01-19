@@ -1,6 +1,5 @@
-#!/usr/bin/python2
-# system-switch-java - the Java toolset switcher frontend
-# Copyright (C) 2007 Red Hat, Inc.
+# switch_java_globals - global constants
+# Copyright (C) 2014 Red Hat, Inc.
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,16 +16,11 @@
 # Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 # 02110-1301 USA.
 
-import signal
-import sys
+PACKAGE_NAME='system-switch-java'
+PROGNAME='system-switch-java'
+VERSION='1.1.7.1'
 
-DIRECTORY = '/usr/local/share/system-switch-java/'
-if not DIRECTORY in sys.path:
-    sys.path.append(DIRECTORY)
-import switch_java_boot
-
-if __name__ == '__main__':
-    # Make Ctrl-C work.
-    signal.signal(signal.SIGINT, signal.SIG_DFL)
-    switch_java_boot.main()
-    sys.exit(0)
+PREFIX='/usr/local'
+BIN_DIR='/usr/local/bin'
+DATA_ROOT_DIR='/usr/local/share'
+LOCALE_DIR='/usr/local/locale'

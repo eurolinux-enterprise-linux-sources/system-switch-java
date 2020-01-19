@@ -1,13 +1,20 @@
-AC_INIT
-AM_INIT_AUTOMAKE([system-switch-java], [1.1.4], [dbhole@redhat.com])
+AC_INIT([system-switch-java], [1.1.7.1], [dbhole@redhat.com], ,
+        [https://fedorahosted.org/system-switch-java/])
+
+AM_INIT_AUTOMAKE([no-dist-gzip dist-xz -Wall])
+
+GETTEXT_PACKAGE=system-switch-java
+AC_SUBST([GETTEXT_PACKAGE])
+AM_GLIB_GNU_GETTEXT
+IT_PROG_INTLTOOL
+
 AM_PATH_PYTHON
-AC_PATH_TOOL([MSGFMT], [msgfmt])
-AC_SUBST([MSGFMT])
-AC_PATH_TOOL([INTLTOOL_UPDATE], [intltool-update])
-AC_SUBST([INTLTOOL_UPDATE])
-AC_PATH_TOOL([INTLTOOL_MERGE], [intltool-merge])
-AC_SUBST([INTLTOOL_MERGE])
-AC_CONFIG_FILES([Makefile])
-AC_CONFIG_FILES([po/Makefile])
-AC_CONFIG_FILES([switch_java_functions.py])
+
+AC_CONFIG_FILES([
+    Makefile
+    po/Makefile.in
+    switch_java_globals.py
+    system-switch-java
+])
+
 AC_OUTPUT

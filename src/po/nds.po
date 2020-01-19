@@ -1,0 +1,76 @@
+# Low German translation of system-switch-java.
+# Copyright (C) 2008 Red Hat, Inc.
+# This file is distributed under the same license as the system-switch-java package.
+# Nils-Christoph Fiedler <ncfiedler@fedoraproject.org>, 2010.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2010-12-05 15:22+0100\n"
+"Last-Translator: Nils-Christoph Fiedler <ncfiedler@gnome.org>\n"
+"Language-Team: Low German <nds-lowgerman@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Low German\n"
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Java-Warktüügset-Instellen"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Installerte Java-Warktüügsets"
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Sluten"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Java-Warktüügset"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Dat Standard Java Warktüügset ännern"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "Testböverflach ook opwiesen wenn Grafikbillschirm verfögbar is"
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Keen unnerstüttes Java Paket funnen. Een unnerstüttes Java Paket is eens, dat eene Datei installert mit de Form::\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java "
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "De Versök, /var/lib/alternatives/java to parsen güng in'n dutt."
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Wähl dat Standard Java Warktüügset för dat System ut."
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Dat Standard Java Warktüügset künn jüst vum Root Bruker ännert werrn."

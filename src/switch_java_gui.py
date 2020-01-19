@@ -19,6 +19,7 @@
 import gtk
 import gtk.glade
 from switch_java_functions import *
+from switch_java_globals import DATA_ROOT_DIR, PACKAGE_NAME
 
 class mainDialog:
     def __init__(self):
@@ -26,9 +27,9 @@ class mainDialog:
 
     def main(self, java_identifiers, default_java, pretty_names):
         # Initialize UI.
-        xml = gtk.glade.XML('/usr/share/system-switch-java/'
-                            + 'system-switch-java.glade',
-                            None, domain=PROGNAME)
+        xml = gtk.glade.XML(DATA_ROOT_DIR + '/' + PACKAGE_NAME + '/' +
+                            PACKAGE_NAME + '.glade',
+                            None, domain=PACKAGE_NAME)
         self.dialog = xml.get_widget('dialog')
         self.dialog.set_title(TITLE_MESSAGE)
         radio_vbox = xml.get_widget('radio-vbox')
@@ -49,6 +50,7 @@ class mainDialog:
                 self.radio_buttons[java] = gtk.RadioButton(group_button,
                                                            pretty_names[java])
             radio_vbox.pack_start(self.radio_buttons[java], False, False, 0)
+            self.radio_buttons[java].set_use_underline(False);
             self.radio_buttons[java].show()
             self.radio_buttons[java].connect("toggled", lambda *x:
                                              ok_button.set_sensitive(True))
@@ -63,8 +65,8 @@ class mainDialog:
                                                 self.cancel_button_clicked)
         self.dialog.connect('delete-event', self.dialog_delete_event)
         self.dialog.connect('hide', gtk.main_quit)
-        self.dialog.set_icon_from_file('/usr/share/pixmaps/'
-                                       + 'system-switch-java.png')
+        self.dialog.set_icon_from_file(DATA_ROOT_DIR + '/pixmaps/'
+                                       + PACKAGE_NAME + '.png')
         self.dialog.show()
         gtk.main()
 
@@ -91,6 +93,6 @@ class mainDialog:
                                    gtk.BUTTONS_OK,
                                    message)
         dialog.set_title(TITLE_MESSAGE)
-        dialog.set_icon_from_file('/usr/share/pixmaps/system-switch-java.png')
+        dialog.set_icon_from_file(DATA_ROOT_DIR + '/pixmaps/' + PACKAGE_NAME + '.png')
         dialog.run()
         dialog.destroy()

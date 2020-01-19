@@ -1,3 +1,264 @@
+2016-08-07  Jiri Vanek <jvanek@redhat.com>
+
+	improved tui composing code around close and new cancel button
+
+	* switch_java_functions.py: added Cancel message
+	* switch_java_tui.py: buttons moved to groups
+
+2016-08-07  Jiri Vanek <jvanek@redhat.com>
+
+	hardcoded usage of python2
+	* system-switch-java.in: moved to use /usr/bin/python2
+
+2016-08-07  Jiri Vanek <jvanek@redhat.com>
+
+	Added switch -t to allow walk around hardcoded check on UID 0
+
+	* switch_java_boot.py: added new option '-r', '--non-root' whci set
+	switch_java_functions.none_root to  True
+	(main) check for UID softened by usage of none_root
+	* switch_java_functions.py: added new field none_root, by default False	
+
+2016-08-07  Jiri Vanek <jvanek@redhat.com>
+
+	Added support for zipped docs and java-version-vendor masters.
+	Fixed call to crating javadoc master by adding /api suffix
+	* switch_java_functions.py: new dictionary JAVADOCZIP.
+	(_get_javadocs_alternatives) new method  to unify getting javadoc and zipped docs
+	(get_javadocdir_alternatives) and (get_javadoczip_alternatives) wrrapping
+	_get_javadocs_alternatives by .zip or /api suffix.
+	MEthods used reasonably.
+	
+
+2016-03-23  Omair Majid  <omajid@redhat.com>
+
+	* po/system-switch-java.pot: Regenerated.
+	* switch_java_functions.py (get_java_identifiers)
+	(initialize_alternatives_dictionaries): Accept JDK directories without a
+	'jre' sub-directory.
+	* tests/test_switch_java_functions.py:
+	(test_get_java_identifiers_finds_jre_in_jdk_without_jre_subdir)
+	(test_initialize_alternative_dictionaries_picks_up_java_with_jre_subdir)
+	(test_initialize_alternative_dictionaries_picks_up_java_without_jre_subdir)
+	(test_initialize_alternative_dictionaries_picks_up_jre_without_jre_subdir):
+	New tests.
+
+2015-11-23  Jiri Vanek <jvanek@redhat.com>
+
+	Added support for family flag of future alternatives
+	* switch_java_functions.py: (_get_alternatives) when parsing priority
+	it checks if new format with @ delimiters is presented. If so, parse it, if no
+	direct convert to int is done as before. If debug, this method prints out why
+	it died on exception before rethrowing
+
+2015-11-20  Jiri Vanek <jvanek@redhat.com>
+
+	Added support for debug subpackages
+	* switch_java_functions.py: (get_pretty_name) now strip -debug wen generating
+	pretty name and addinng DEBUG if -debug was -debug was presented in NVRA
+	(get_java_split) also strips -debug from NVRA
+	* switch_java_tui.py: tui dialog made 10 chars more wide.	
+
+2015-11-20  Jiri Vanek <jvanek@redhat.com>
+
+	Added ITW support
+	* switch_java_functions.py: (get_java_identifiers) added debug output of read
+	alternatives. (get_plugin_alternatives) regex enhanced for IcedTeaPlugin.so
+	(initialize_alternatives_dictionaries) made aware of IcedTeaPlugin.so too.
+
+2015-11-20  Jiri Vanek <jvanek@redhat.com>
+
+	Added debug switch
+	* switch_java_boot.py: made aware of switch_java_functions.ssj_debug. Added
+	-d/--debug option to be known and used.
+	* switch_java_functions.py: declared ssj_debug with False. (_exec) id debug
+	then it prints out command it is executing
+	* switch_java_globals.py.in: removed comment of replacing prefix by bindir
+	and friends.Its working and not going to be fixed any time soon
+
+2014-04-25  Omair Majid  <omajid@redhat.com>
+
+	* switch_java_functions.py: Style fixes. Remove trailing semicolons,
+	parentheses in if statements and extra or missing spacing.
+
+2014-04-25  Omair Majid  <omajid@redhat.com>
+
+	* tests/test_switch_java_functions.py: Disable some pylint warnings.
+
+2014-04-25  Omair Majid  <omajid@redhat.com>
+
+	* switch_java_functions.py
+	(get_alternatives): Add optional arguments for unit testing. Wrap
+	file operations in a with block.
+	(_get_alternatives): New function.
+	* tests/test_switch_java_functions.py
+	(file_always_exists, create_stub_open_that_raises)
+	(create_stub_open_for): New functions.
+	(test_get_alternatives): Remove.
+	(test_get_alternatives_raises_JavaOpenError_on_missing_alternative_file)
+	(test_get_alternatives_raises_JavaParseError_on_empty_file)
+	(test_get_alternatives_empty_alternatives_best_is_negative)
+	(test_get_alternatives_parses_alternatives)
+	(test_get_alternatives_selects_best_alternatives): New methods.
+
+2014-04-24  Omair Majid  <omajid@redhat.com>
+	* tests/test_switch_java_functions.py
+	(test_switch_java_changes_java_and_jre_alternatives)
+	(test_switch_java_changes_jce_alternatives)
+	(test_switch_java_changes_javac_alternatives)
+	(test_switch_java_changes_plugin_alternatives)
+	(test_switch_java_changes_javadocdir_alternatives): Use self.assertIn for
+	lists.
+
+2014-04-24  Omair Majid  <omajid@redhat.com>
+
+	* switch_java_functions.py
+	(switch_java): Call _set_alternative instead of building command line
+	every time.
+	(_set_alternative): New function.
+
+2014-04-24  Omair Majid  <omajid@redhat.com>
+
+	* switch_java_functions.py
+	(_exec): New function.
+	(switch_java): Call _exec instead of os.system.
+	* tests/test_switch_java_functions.py
+	(test_switch_java): Remove.
+	(__init__, setUp, tearDown, _reset_globals)
+	(test_switch_java_changes_java_and_jre_alternatives)
+	(test_switch_java_changes_jce_alternatives)
+	(test_switch_java_changes_javac_alternatives)
+	(test_switch_java_changes_plugin_alternatives)
+	(test_switch_java_changes_javadocdir_alternatives)
+	(_populate_empty_globals): New functions.
+
+2014-04-24  Omair Majid  <omajid@redhat.com>
+
+	* switch_java_functions.py: Add module-level docstring. Remove uneeded
+	imports
+	(JavaOpenError): Add docstring.
+	(JavaParseError): Add docstring.
+	(get_java_identifiers): Fix typo in variable name.
+	(get_alternatives): Don't use names that clash with built-in functions.
+	* switch_java_tui.py: Add module-level docstring.
+	(main): Don't use names that clash with built-in types.
+	* tests/test_switch_java_functions.py: Add module-level docstring.
+	(test_get_java_split_with_arch, test_get_java_split_without_arch): Don't
+	use names that clash with built-in functions.
+	* po/system-switch-java.pot: Regenerate.
+
+2014-04-23  Jiri Vanek  <jvanek@redhat.com>
+
+	Improved and enabled sorting of list
+	* switch_java_functions.py: new function of (version_sort_split)
+	to split numbers and strings in NVR
+	(version_sort) new function, comparing by mixture of numeric and 
+	alphanumeric comparisons
+	(version_sort_wrapper) wrapper around version_sort  for special tuples
+	(get_java_identifiers) modified to use version_sort, and propagating 
+	sorted list rather then unsorted
+	(get_sorting_name) - removed
+	* /tests/test_switch_java_functions.py: new tests of 
+	(test_version_sort_split) (test_version_sort_split_on_short)
+	(test_version_sort_split_on_short_with_arch) and (test_version_sort)
+	to test new functionality
+
+2014-04-23  Jiri Vanek  <jvanek@redhat.com>
+
+	Added inclusion f NVR or part of NVR behind pretty jdks' id in list
+	* switch_java_functions.py: (get_pretty_name) added recognition of
+	nvr and arch. Added support for legacy dirs without NVR
+	(get_java_split) similar
+	* tests/test_switch_java_functions.py: fixed existing tests to follow new
+	conventions. Added test_get_pretty_names_i686, test_get_pretty_name_openjdk7_full_nvr
+	test_get_pretty_name_openjdk7_full_nvr_fedora, test_get_pretty_name_openjdk6_partial_nvr
+	test_get_pretty_name_sun6_jsut_arch, test_get_pretty_name_sun6_partial_nvr
+	test_get_pretty_name_openjdk6_just_arch, test_get_pretty_name_oracle7_full_nvr
+	and def test_list_of_javas. The last one is testing list of various jdks as listed
+	from installation.
+
+2014-04-10  Omair Majid  <omajid@redhat.com>
+
+	* Makefile.am:
+	(python_PYTHON): Add switch_java_globals.py and switch_java_boot.py.
+	(EXTRA_DIST): Add switch_java_globals.py.in. Remove
+	switch_java_functions.py.in.
+	(check-local): Include srcdir and current dir in PYTHONPATH.
+	* configure.ac: Add switch_java_globals.py and system-switch-java to
+	AC_CONFIG_FILES
+	* po/POTFILES.in: Add switch_java_functions.py. Remove
+	switch_java_functions.py.in.
+	* po/system-switch-java.pot: Regenerate.
+	* system-switch-java: Rename to ...
+	* system-swtich-java.in: New file.
+	(main): Move to ...
+	* swtich_java_boot.py: New file.
+	* switch_java_functions.py.in: Rename to ...
+	* switch_java_functions.py: New file. Import constants from
+	switch_java_globals.
+	* switch_java_globals.py.in: New file.
+	* switch_java_gui.py: Use constants from switch_java_globals.
+
+2014-04-10  Jiri Vanek  <jvanek@redhat.com>
+
+	* switch_java_tui.py: (main) text made wider to 60,
+	list made wider to 50 and with scrollbarr.
+
+2014-04-10  Jiri Vanek  <jvanek@redhat.com>
+
+	* switch_java_functions.py.in: removed (AUTORS)
+	* AUTHORS: added Omair Majid and Jiri Vanek
+
+2014-04-02  Omair Majid  <omajid@redhat.com>
+
+	* Makefile.am (check-local): New target.
+	* switch_java_functions.py.in: Refactor code, add docstrings.
+	(get_pretty_name): New function extracted from get_pretty_names.
+	(get_pretty_names): Call get_pretty_name.
+	* tests/test_switch_java_functions.py: New file.
+
+2014-04-02  Omair Majid  <omajid@redhat.com>
+
+	* INSTALL,
+	* Makefile.in,
+	* aclocal.m4,
+	* configure,
+	* install-sh,
+	* missing,
+	* py-compile,
+	* po/Makefile.in: Remove generated file.
+	* autogen.sh: New file. Generate files when needed.
+	* configure.ac: Pass arguments to AC_INIT. Don't pass arguments to
+	AM_INIT_AUTOMAKE. Invoke AC_PROG_INTLTOOL to test for intltool* and
+	msgfmt. Generate po/Makefile.in.
+	* .hgignore: Don't ignore .gmo files.
+	* po/LINGUAS: New file
+	* po/POTFILES.skip: New file.
+
+2014-03-05  Jiri Vanek  <jvanek@redhat.com>
+
+	* switch_java_gui.py: as underline is part of name of jdk, the usage of
+	decorative underline is making it less readable. Disabling.
+
+2014-03-05  Jiri Vanek  <jvanek@redhat.com>
+
+	* switch_java_tui.py: Some jdks' names with full version are to long
+	to be displayed in tui. Increasing the width of listbox by ten px.
+
+2014-03-04  Omair Majid  <omajid@redhat.com>
+
+	* configfure.ac: Bump version to 1.1.6pre.
+
+2014-02-10  Omair Majid  <omajid@redhat.com>
+
+	* switch_java_functions.py.in
+	(get_java_identifiers, initialize_alternatives_dictionaries): Handle
+	/usr/lib/jvm/java-*/jre too.
+
+2013-10-18  Omair Majid  <omajid@redhat.com>
+
+	* configure.ac: Fail if any of the required tools are missing.
+
 2009-08-19  Deepak Bhole  <dbhole@redhat.com>
 	
 	* switch_java_gui.py: Integrated patch from Radek Novacek to add an OK
