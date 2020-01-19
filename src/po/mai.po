@@ -1,0 +1,81 @@
+# translation of system-switch-java.tip.po to Maithili
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-23 01:44+0000\n"
+"PO-Revision-Date: 2009-02-24 21:51+0530\n"
+"Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
+"Language-Team: Maithili <maithili.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "पाठ अंतरफलक देखाबै अछि मुदा आलेखी प्रदर्शन उपलब्ध रहैत अछि"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/java क' विश्लेषण क' प्रयास विफल."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"कोनो समर्थित संकुल नहि भेटल.  समर्थित जावा संकुल एकटा एहन अछि जे फार्म क' फाइल संस्थापित "
+"करैत अछि:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"उदाहरण क' लेल, java-1.4.2-gcj-compat एकटा समर्थित संकुल अछि किएक ई संस्थापित करैत "
+"अछि:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "पूर्वनिर्धारित जावा टूलसेट सिस्टम क' लेल चुनू."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "जावा टूलसेट विन्यास"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "संस्थापित जावा टूलसेट"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "पूर्वनिर्धारित जावा टूलसेट केँ सिर्फ रूट प्रयोक्ता क' द्वारा विन्यस्त कएल जाए सकैत अछि."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "बेस"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "बन्न  करू "
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "पूर्वनिर्धारित जावा टूलसेट बदलू"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "जावा टूलसेट"
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.2
+Categories=System;Settings;
+_Name=Java Toolset
+_Comment=Change the default Java toolset
+Exec=/usr/bin/system-switch-java
+Terminal=false
+Type=Application
+Icon=system-switch-java.png

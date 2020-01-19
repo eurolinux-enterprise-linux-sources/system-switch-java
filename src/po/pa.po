@@ -1,0 +1,78 @@
+# translation of system-switch-java.tip.pa.po to Punjabi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jaswinder Singh <jsingh@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip.pa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2009-04-07 14:41+0530\n"
+"Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
+"Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "ਪਾਠ ਇੰਟਰਫੇਸ ਵੇਖਾਓ ਭਾਵੇਂ ਗਰਾਫੀਕਲ ਦਰਿਸ਼ ਉਪਲੱਬਧ ਹੈ"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/java ਨੂੰ ਪਾਰਸ ਕਰਨ ਦੀ ਇੱਕ ਕਾਰਵਾਈ ਫੇਲ ਹੋਈ।"
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"ਕੋਈ ਸਹਿਯੋਗੀ ਜਾਵਾ ਪੈਕੇਜ ਨਹੀਂ ਲੱਭਿਆ।  ਇੱਕ ਸਹਿਯੋਗੀ ਜਾਵਾ ਪੈਕੇਜ ਹੈ ਉਹ ਹੈ ਜੋ ਇਸ ਕਿਸਮ ਦੀ ਫਾਇਲ ਇੰਸਟਾਲ ਕਰਦਾ ਹੈ:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"ਉਦਾਹਰਨ ਲਈ, java-1.4.2-gcj-compat ਇੱਕ ਸਹਿਯੋਗੀ ਪੈਕੇਜ ਹੈ ਕਿਉਂਕਿ ਇਹ ਹੇਠਲੀ ਇੰਸਟਾਲ ਕਰਦਾ ਹੈ:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "ਸਿਸਟਮ ਲਈ ਮੂਲ ਜਾਵਾ ਟੂਲਸੈੱਟ ਚੁਣੋ।"
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "ਜਾਵਾ ਟੂਲਸੈੱਟ ਸੰਰਚਨਾ"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "ਇੰਸਟਾਲ ਕੀਤਾ ਜਾਵਾ ਟੂਲਸੈੱਟ"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "ਮੂਲ ਜਾਵਾ ਟੂਲਸੈੱਟ ਸਿਰਫ ਰੂਟ ਦੁਆਰਾ ਸੰਰਚਿਤ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "ਠੀਕ"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "ਬੰਦ"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "ਮੂਲ ਜਾਵਾ ਟੂਲਸੈੱਟ ਤਬਦੀਲ ਕਰੋ"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "ਜਾਵਾ ਟੂਲਸੈੱਟ"
+

@@ -1,0 +1,78 @@
+# Danish translation of system-switch-java.
+# Copyright (C) 2008 THE system-switch-java'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the system-switch-java package. 
+# David Kjær <raevbanan@fedoraproject.org>, 2008.
+# Kris Thomsen <lakristho@gmail.com>, 2009.
+#  
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2009-05-15 15:53+0200\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "vis tekstgrænsefalde selv hvis grafisk visning er tilgængelig"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Et forsøg på at læse /var/lib/alternatives/java mislykkedes."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Ingen understøttede Java-pakker blev fundet. En understøttet Java-pakke er "
+"en pakke der installerer en fil på formen:\n"
+"/usr/lib/jvm/jre-$version-$udbyder/bin/java\n"
+"\n"
+"For eksempel, er java-1.4.2-gcj-compat en understøttet Java-pakke fordi den "
+"installerer:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Vælg standard Java-værktøjssæt for systemet."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Konfigurér Java-værkstøjssæt"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Installerede Java-værktøjssæt"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Standard Java-værktøjssæt kan kun konfigureres af administratorbrugeren, root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "O.k."
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Luk"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Ændr standard Java-værktøjssæt"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Java-værktøjssæt"

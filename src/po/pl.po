@@ -1,0 +1,78 @@
+# translation of pl.po to Polish
+# Piotr Drąg <piotrdrag@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2008-07-04 16:52+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "wyświetl interfejs tekstowy nawet, jeśli ekran graficzny jest dostępny"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Próba przeanalizowania /var/lib/alternatives/java nie powiodła się."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Nie znaleziono obsługiwanych pakietów Java. Obsługiwane pakiety Java to te, "
+"które instalują plik w formie:\n"
+"\n"
+"/usr/lib/jvm/jre-$versja-$producent/bin/java\n"
+"\n"
+"Na przykład java-1.4.2-gcj-compat jest obsługiwanym pakietem, ponieważ "
+"instaluje:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Wybierz domyślny zestaw narzędzi Java dla systemu."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Konfiguracja zestawu narzędzi Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Zainstalowane zestawy narzędzi Java"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr ""
+"Domyślny zestaw narzędzi Java może być konfigurowany tylko przez użytkownika "
+"root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Zamknij"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Zmiana domyślnego zestawu narzędzi Java"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Zestaw narzędzi Java"

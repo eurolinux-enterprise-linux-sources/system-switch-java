@@ -1,0 +1,3 @@
+system-switch-java provides an easy way to select the default Java
+toolset for the system.  It shells out to /usr/sbin/alternatives to
+set the "java", "javac" and related alternatives.

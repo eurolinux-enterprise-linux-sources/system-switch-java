@@ -1,0 +1,80 @@
+# translation of system-switch-java.tip.po to Tamil
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# I. Felix <ifelix@redhat.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-29 09:18+0000\n"
+"PO-Revision-Date: 2008-10-13 13:12+0530\n"
+"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "வரைகலை காட்சி இருந்தாலும் உரை முகப்பை காட்டவும்"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/java க்கான முயற்சி தோல்வியடைந்தது."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"துணைபுரியும் ஜாவா தொகுப்புகள் காணப்படவில்லை.  ஒரு துணைபுரியும் ஜாவா தொகுப்பு ஒரு கோப்பினை பின்வரும் வடிவில் நிறுவுகிறது:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"எடுத்துக்காட்டாக, java-1.4.2-gcj-compat ஒரு துணைபுரியும் தொகுப்பாகும்:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "கணினிக்கு முன்னிருப்பு ஜாவா டூல்செட்டை தேர்ந்தெடு"
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "ஜாவா டூல்செட் கட்டமைப்பு"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "நிறுவப்பட்ட ஜாவா டூல்செட்கள்"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "முன்னிருப்பு ஜாவா டூல் செட் ரூட் பயனரால் மட்டுமே கட்டமைப்படும்."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "சரி"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "மூடு"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "முன்னிருப்பு ஜாவா டூல்செட்டை மாற்று"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "ஜாவா டூல்செட்"
+

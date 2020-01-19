@@ -1,0 +1,81 @@
+# Hungarian translation of system-switch-java.
+# Copyright (C) 2008 Fedora Project
+# This file is distributed under the same license as the system-switch-java package.
+# Sulyok Péter <peti@fedoraproject.org>, 2008.
+# 
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java tip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-22 19:23+0000\n"
+"PO-Revision-Date: 2008-09-22 23:27+0200\n"
+"Last-Translator: Sulyok Péter <peti@fedoraproject.org>\n"
+"Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "szöveges felület használata még akkor is ha elérhető a grafikus"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "A /var/lib/alternatives/java feldolgozására tett kísérlet elbukott."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Nem találtam támogatott Java csomagokat.  Támogatott Java csomag "
+"ilyen alakú fájlt telepít:\n"
+"\n"
+"/usr/lib/jvm/jre-$változat-$szállító/bin/java\n"
+"\n"
+"Például: a java-1.4.2-gcj-compat csomag támogatott, mert telepíti ezt:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "A rendszer alapértelmezett Java eszközkészletének kiválasztása."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Java eszközkészlet beállítás"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Telepített Java eszközkészletek"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Az alapértelmezett Java eszközkészletet csak rendszergazda állíthatja be."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Az alapértelmezett Java eszközkészlet megváltoztatása"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Java eszközkészlet"
+

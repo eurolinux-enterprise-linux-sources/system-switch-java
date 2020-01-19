@@ -1,0 +1,78 @@
+# system-switch-java Bahasa Indonesia.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the system-switch-java package.
+# Teguh DC <dheche@songolimo.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2008-10-06 16:05+0700\n"
+"Last-Translator: Teguh DC <dheche@songolimo.net>\n"
+"Language-Team: Fedora Trans ID <fedora-trans-id@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "tampilkan antarmuka teks meskipun tampilan grafis tersedia"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Usaha mem-parse /var/lib/alternatives/java gagal."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Paket Java yang didukung tidak ditemukan. Paket Java yang didukung adalah yang "
+"menginstal berkas dalam bentuk:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"Sebagai contoh, java-1.4.2-gcj-compat adalah paket yang didukung karena ia "
+"menginstal:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Pilih toolset Java standar untuk sistem."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Konfigurasi Toolset Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Toolset Java yang Terinstal"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Toolset Java standar hanya bisa dikonfigurasi oleh user root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Tutup"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Ubah toolset java standar"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Toolset Java"

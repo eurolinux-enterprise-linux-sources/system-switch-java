@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-01 09:19+0000\n"
+"PO-Revision-Date: 2008-09-01 13:44-0300\n"
+"Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
+"Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "mostrar la interfase de texto aún cuando haya disponible una pantalla gráfica"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Falló el intento de analizar /var/lib/alternatives/java"
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"No hay soporte para paquetes Java. Un paquete Java soportado es el que instala un archivo de la forma\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"Por ejemplo, java-1.4.2-gcj-compat es un paquete soportado porque instala :\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Seleccione el conjunto de herramientas Java predeterminado para el sistema."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Configuración del Conjunto de Herramientas Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Conjunto de Herramientas Java Instalado"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "El conjunto de herramientas Java predeterminado solamente puede ser configurado por el usuario root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "Aceptar"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Cambiar el conjunto de herramientas Java predeterminado"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Conjunto de Herramientas Java"
+

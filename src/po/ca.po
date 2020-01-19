@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-30 17:39+0000\n"
+"PO-Revision-Date: 2008-09-30 20:19+0100\n"
+"Last-Translator: Agustí Grau <fletxa@gmail.com>\n"
+"Language-Team: Catalan <fedora@softcatala.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "mostra la interfície de text tot i que el mode gràfic estigui disponible"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Ha fallat l'intent d'analitzar /var/lib/alternatives/java."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"No s'han trobat paquets Java vàlids. Un paquet Java vàlid instal·la un fitxer de la forma:\n"
+"\n"
+"/usr/lib/jvm/jre-$versió-$creador/bin/java\n"
+"\n"
+"Per exemple, java-1.4.2-cgj-compat és un paquet vàlid perquè instal·la:\n"
+"\n"
+"/usr/lib/jvm7jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Seleccioneu les eines java per omissió del sistema."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Configuració de les eines Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Eines Java instal·lades"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Les eines Java per omissió només poden ser configurades per l'usuari root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "D'acord"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Tanca"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Canvia les eines Java per omissió"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Eines Java"
+

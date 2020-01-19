@@ -1,0 +1,81 @@
+# Romanian translation of system-switch-java.tip.
+# Copyright (C) 2009 THE system-switch-java.tip'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the system-switch-java.tip package.
+# Florin Dăscălache <floda61@yahoo.com>, 2009.
+# , fuzzy
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-11-18 01:37+0000\n"
+"PO-Revision-Date: 2009-02-11 16:18+0200\n"
+"Last-Translator: Florin Dăscălache <floda61@yahoo.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "afișează interfața text chiar dacă afișararea în modul grafic este disponibilă"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Încercarea de a analiza /var/lib/alternatives/java a eșuat."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Au fost găsite pachete Java care nu sunt suportate.  Un pachet Java suportat este unul "
+"care instalează un fișier de forma:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"Spre exemplu, java-1.4.2-gcj-compat este un pachet suportat deoarece "
+"instalează:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Selectați setul de unelte Java implicit pentru acest sistem."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Configurarea Setului de Unelte Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Setul de Unelte Java instalat"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Setul de unelte Java implicit poate fi configurat doar de utilizatorul root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Închide"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Schimbați setul de unelte Java implicit pentru acest sistem."
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Setul de Unelte Java"
+

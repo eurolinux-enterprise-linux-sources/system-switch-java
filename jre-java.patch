@@ -1,0 +1,167 @@
+--- system-switch-java-1.1.5/switch_java_functions.py.in	2009-08-19 20:03:01.000000000 +0200
++++ system-switch-java-1.1.5-me/switch_java_functions.py.in	2011-08-13 07:41:20.941026295 +0200
+@@ -70,10 +70,12 @@
+     pass
+ class JavaParseError(Exception):
+     pass
+ 
+ def switch_java(java):
++    key=java.split('/')[0]
++    #print 'stting: '+key
+     vendor, version, arch = get_java_split(java)
+     # There are problems with the jre_ibm, jre_1.4.2, java_sdk,
+     # java_sdk_1.4.2 and libjavaplugin.so alternatives in the JPackage
+     # java-1.4.2-ibm and java-1.5.0-ibm packages, but not in the RHEL
+     # ones.  We suppress error output from the alternatives commands
+@@ -86,13 +88,21 @@
+     # cause additional problems.
+     suppress = ''
+     if vendor == 'ibm':
+         suppress = ' >/dev/null 2>&1'
+     os.system('/usr/sbin/alternatives --set java ' + JAVA[java])
+-    os.system('/usr/sbin/alternatives --set jre_' + vendor
++    if (JRE[java].find('java')>=0):
++        os.system('/usr/sbin/alternatives --set jre_' + vendor
++              + ' ' + JRE[java]+'/jre' + suppress)
++    else:
++        os.system('/usr/sbin/alternatives --set jre_' + vendor
+               + ' ' + JRE[java] + suppress)
+-    os.system('/usr/sbin/alternatives --set jre_' + version
++    if (JRE[java].find('java')>=0):
++        os.system('/usr/sbin/alternatives --set jre_' + version
++              + ' ' + JRE[java] +'/jre' + suppress)
++    else:
++        os.system('/usr/sbin/alternatives --set jre_' + version
+               + ' ' + JRE[java] + suppress)
+     if JCE[java] != None:
+         os.system('/usr/sbin/alternatives --set jce_' + version
+                   + '_' + vendor + '_local_policy' + arch + ' ' + JCE[java])
+     if JAVAC[java] != None:
+@@ -100,21 +110,28 @@
+         os.system('/usr/sbin/alternatives --set java_sdk_' + vendor
+                   + ' ' + SDK[java] + suppress)
+         os.system('/usr/sbin/alternatives --set java_sdk_' + version
+                   + ' ' + SDK[java] + suppress)
+     if PLUGIN[java] != None:
++        #I believe Arch is not delivered properly
+         os.system('/usr/sbin/alternatives --set libjavaplugin.so' + arch
+                   + ' ' + PLUGIN[java])
++        os.system('/usr/sbin/alternatives --set libjavaplugin.so.x86_64'
++                  + ' ' + PLUGIN[java])
++
+     if JAVADOCDIR[java] != None:
+         os.system('/usr/sbin/alternatives --set javadocdir '
+                   + JAVADOCDIR[java])
+ 
+ def get_java_identifiers():
+     java_identifiers = []
+     best_identifier = None
+     alternatives, best = get_alternatives('java')
+-    java_expression = re.compile('/usr/lib/jvm/jre-([^/]*)/bin/java')
++    # java_expression = re.compile('/usr/lib/jvm/jre-([^/]*)/bin/java')
++    # all fedora/rhel javas are installed into java-... dirrectory and just 
++    # creates (mostly)symlinks jre-... . 
++    java_expression = re.compile('/usr/lib/jvm/((jre-([^/]*)/bin/java)|(java-([^/]*)/jre/bin/java))')
+     for alternative in alternatives:
+         java_search = java_expression.search(alternative)
+         if java_search == None:
+             # Skip unrecognized java alternative.
+             continue
+@@ -134,12 +151,17 @@
+         initialize_alternatives_dictionaries(java_identifiers)
+     return java_identifiers, best_identifier
+ 
+ def get_plugin_alternatives(plugin_alternatives, arch):
+     try:
++        if (len(arch)!=0):
++            arch='.'+arch
+         alternatives, best = get_alternatives('libjavaplugin.so' + arch)
+-        plugin_expression = re.compile('/usr/lib/jvm/jre-([^/]*)/')
++        # plugin_expression = re.compile('/usr/lib/jvm/jre-([^/]*)/')
++        # all fedora/rhel javas are installed into java-... dirrectory and just 
++        # creates (mostly)symlinks jre-... 
++        plugin_expression = re.compile('(/usr/lib/jvm/(java|jre)-([^/]*)/)|(/usr/lib.*/IcedTeaPlugin.so.*)')
+         for alternative in alternatives:
+             java_search = plugin_expression.search(alternative)
+             if java_search == None:
+                 # Skip unrecognized libjavaplugin.so alternative.
+                 continue
+@@ -236,35 +258,43 @@
+ def initialize_alternatives_dictionaries(java_identifiers):
+     plugin_alternatives = get_plugin_alternatives({}, '')
+     javadocdir_alternatives = get_javadocdir_alternatives()
+     arch_found = False
+     for java in java_identifiers:
++        key=java.split('/')[0]
++        javakey=key.replace('jre-','java-')
++        javaPath=java.replace('jre-','java-')
+         vendor, version, arch = get_java_split(java)
+-        JAVA[java] = '/usr/lib/jvm/jre-' + java + '/bin/java'
++        JAVA[java] = '/usr/lib/jvm/'+java
+         # Command-to-alternative-name map to set default alternative.
+         ALTERNATIVES[JAVA[java]] = java
+-        JRE[java] = '/usr/lib/jvm/jre-' + java
+-        jce = '/usr/lib/jvm-private/java-' + java\
++        JRE[java] = '/usr/lib/jvm/' + key
++        #^java?
++        jce = '/usr/lib/jvm-private/' + javakey\
+               + '/jce/vanilla/local_policy.jar'
+         if os.path.exists(jce):
+             JCE[java] = jce
+         else:
+             JCE[java] = None
+-        javac = '/usr/lib/jvm/java-' + java + '/bin/javac'
++        javac = '/usr/lib/jvm/' + javakey + '/bin/javac'
+         if os.path.exists(javac):
+             JAVAC[java] = javac
+-            SDK[java] = '/usr/lib/jvm/java-' + java
++            SDK[java] = '/usr/lib/jvm/' + javakey
+         else:
+             JAVAC[java] = None
+             SDK[java] = None
+         if arch != '' and not arch_found:
+             plugin_alternatives = get_plugin_alternatives(plugin_alternatives,
+                                                           arch)
+             arch_found = True
+         PLUGIN[java] = None
+-        if java in plugin_alternatives:
+-            PLUGIN[java] = plugin_alternatives[java]
++        for v in plugin_alternatives:
++            if (str(plugin_alternatives[v]).find('IcedTeaPlugin.so')>=0 and str(java).find('openjdk')>=0):
++                 PLUGIN[java]=plugin_alternatives[v]
++            else:
++                if (plugin_alternatives[v].find(java.split('/')[0])>=0):
++                    PLUGIN[java] = plugin_alternatives[v]
+         JAVADOCDIR[java] = None
+         if java in javadocdir_alternatives:
+             JAVADOCDIR[java] = javadocdir_alternatives[java]
+ 
+ def get_default_java_command():
+@@ -283,17 +313,22 @@
+             pretty_names[java] = 'IcedTea' + ' ' + version
+         elif vendor == 'openjdk':
+             pretty_names[java] = 'OpenJDK' + ' ' + version
+         else:
+             pretty_names[java] = vendor.upper() + ' ' + version
+-        if arch != '':
+-            pretty_names[java] = pretty_names[java] + ' ' + '64-bit'
++        if len(arch.strip()) == 0:
++            pretty_names[java] = pretty_names[java] + ' ' + 'x86 (32b)'
++        else:
++            pretty_names[java] = pretty_names[java] + ' ' + arch
++            
+     return pretty_names
+ 
+ def get_java_split(java):
+-    vendor_arch = java.split('-')[1].split('.')
++    source=java.split('/')[0];
++    dest_version_vendor_arch = source.split('-')
++    vendor_arch=dest_version_vendor_arch[2].split('.')
+     vendor = vendor_arch[0]
+     arch = ''
+     if len(vendor_arch) > 1:
+-        arch = '.' + vendor_arch[1]
+-    version = java.split('-')[0]
++        arch = vendor_arch[1]
++    version = dest_version_vendor_arch[1]
+     return vendor, version, arch

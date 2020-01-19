@@ -1,0 +1,81 @@
+# translation of system-switch-java.tip.mr.po to marathi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip.mr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-23 03:22+0000\n"
+"PO-Revision-Date: 2008-10-02 06:58+0530\n"
+"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
+"Language-Team: marathi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "चित्रलेखीय प्रदर्शन उपलब्ध असल्यावरही पाठ्य संवाद दर्शवा"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/java वाचण्याचा प्रयत्न अपयशी."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"समर्थीत Java संकुल आढळले नाही.  समर्थीत Java संकुल ते असते जे खालिल प्रकार पैकी फाइल "
+"प्रतिष्ठापीत करते:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"उदाहरणार्थ, java-1.4.2-gcj-compat समर्थीत संकुल आहे कारण ते "
+" खालिल प्रतिष्ठापीत करते:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "प्रणाली करीता मुलभूत Java साधनसंच निवडा."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Java साधनसंच संयोजना"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Java साधनसंच प्रतिष्ठापीत केले"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "मुलभूत Java साधनसंच फक्त रूट वापरकर्ता द्वारे संयोजीत केले जाऊ शकते."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "ठिक आहे"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "बंद करा"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "मुलभूत Java साधनसंच बदलवा"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Java साधनसंच"
+

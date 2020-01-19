@@ -1,0 +1,104 @@
+2009-08-19  Deepak Bhole  <dbhole@redhat.com>
+	
+	* switch_java_gui.py: Integrated patch from Radek Novacek to add an OK
+	button and keep it disabled until changes are made.
+	* system-switch-java.glade: Same.
+
+2008-10-28  Deepak Bhole  <dbhole@redhat.com>
+
+	* configure.ac: Bump version number to 1.1.4, and change owner address.
+	* configure: Regenerate.
+
+2008-07-03  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* configure.ac: Bump version number to 1.1.3.
+	* configure: Regenerate.
+	* system-switch-java.desktop.in (Categories): Use freedesktop.org
+	standard categories.
+
+2008-07-03  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* .hgignore: New file.
+
+2008-07-03  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* aclocal.m4: Regenerate.
+	* po/en_CA.po: Update.
+	* po/en_GB.po: Likewise.
+	* po/POTFILES.in: New file.
+	* po/system-switch-java.pot: New file.
+	* Makefile.am (DISTCLEANFILES): Remove po/POTFILES.in and
+	po/$(PACKAGE).pot.
+	* Makefile.in: Regenerate.
+
+2008-04-18  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* switch_java_functions.py.in (get_java_identifiers): Fix error
+	reporting when single JDK alternative's java primary symbolic link
+	is broken.
+
+2007-10-02  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* configure.ac: Bump version number to 1.1.1.
+	* switch_java_functions.py.in (get_plugin_alternatives): Catch
+	JavaOpenError and JavaParseError exceptions.
+	(get_javadocdir_alternatives): Likewise.
+
+2007-09-28  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* switch_java_functions.py.in (get_alternatives): Exclude
+	alternatives that do not exist in the filesystem.
+	(switch_java): Handle 64-bit plugin alternative.
+	(initialize_alternatives_dictionaries): Likewise.
+	Clarify identifier method names.
+	* switch_java_gui.py: Likewise.
+	* switch_java_tui.py: Likewise.
+	* system-switch-java: Likewise.
+
+2007-09-27  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* configure.ac: Bump version number to 1.1.1.
+	* configure: Regenerate.
+	* switch_java_functions.py.in: Import re.
+	(JAVADOCDIR): New dictionary.
+	(switch_java): Set javadocdir alternative.
+	(get_java_alternatives): Rewrite to use get_alternatives.
+	(get_plugin_alternatives): New method.
+	(get_javadocdir_alternatives): New method.
+	(get_alternatives): New method.
+	Accept trailing blank lines in alternatives database.
+	(get_alternative_names): Initialize PLUGIN and JAVADOCDIR
+	dictionaries.
+
+2007-06-26  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* Makefile.am (EXTRA_DIST): Include COPYING.icon.
+	* Makefile.in: Regenerate.
+
+2007-06-25  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* switch_java_functions.py.in (JAVA_ALTERNATIVES): Remove
+	variable.
+	(get_java_alternatives): New function.
+	(get_java_list): Rename...
+	(get_alternative_names): New function.
+	(get_pretty_names): Add support for IcedTea and OpenJDK.
+	* system-switch-java (main): Support --version, --help, --text.
+	* po/en_CA.po: Update translations.
+	* po/en_GB.po: Likewise.
+
+2007-06-23  Thomas Fitzsimmons  <fitzsim@redhat.com>
+
+	* Makefile.am: New file.
+	* configure.ac: Likewise.
+	* Makefile: Remove.
+	* intltool-update: Likewise.
+	* po/Makefile: Likewise.
+	* po/POTFILES.in: Likewise.
+	* po/system-switch-java.pot: Likewise.
+	* system-switch-java-tui.console: Likewise.
+	* system-switch-java-tui.pam: Likewise.
+	* system-switch-java.console: Likewise.
+	* system-switch-java.pam: Likewise.
+	* system-switch-java.py: Likewise.
+	* translate.py: Likewise.

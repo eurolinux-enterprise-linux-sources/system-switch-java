@@ -1,0 +1,86 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Dimitris Glezos <dimitris@glezos.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-29 01:59+0000\n"
+"PO-Revision-Date: 2008-09-29 12:00+0300\n"
+"Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
+"Language-Team: Greek <fedora-trans-el@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr ""
+"εμφάνιση διεπαφής κειμένου ακόμη κι αν η υπάρχει υποστήριηξη γραφικής "
+"διεπαφής"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Απέτυχε η προσπάθεια ανάγνωσης του /var/lib/alternatives/java."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Δε βρέθηκαν υποστηριζόμενα πακέτα Java.  Πρόκειται για πακέτα Java που "
+"εγκαθιστούν"
+"ένα αρχείο της μορφής:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"Για παράδειγμα, το java-1.4.2-gcj-compat είναι ένα υποστηριζόμενο πακέτο "
+"γιατί"
+"εγκαθιστά:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Επιλέξτε το προεπιλεγμένο σετ εργαλείων Java για το σύστημα σας."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Ρύθμιση σετ εργαλείων Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Εγκατεστημένα σετ εργαλείων Java"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr ""
+"Το προεπιλεγμένο σετ εργαλείων Java μπορεί να ρυθμιστεί μόνο από τον "
+"υπερχρήστη."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "Εντάξει"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Αλλαγή του προεπιλεγμένου σετ εργαλείων Java"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Σετ εργαλείων Java"
+

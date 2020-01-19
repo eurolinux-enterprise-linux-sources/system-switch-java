@@ -1,0 +1,80 @@
+# Brazilian Portuguese translation of system-switch-java.
+# This file is distributed under the same license as the system-switch-java package.
+#
+#
+# Automatically generated, 2008.
+# Wilson Campos <wcampos5@gmail.com>, 2008.
+# Igor Pires Soares <igor@projetofedora.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-09-10 11:24-0300\n"
+"Last-Translator: Wilson Campos <wcampos5@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Generator: poedit 2.22.3\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "exibe a interface de texto mesmo que o modo gráfico esteja disponível"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Falha ao tentar analisar /var/lib/alternatives/java."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Nenhum pacote Java suportado foi encontrado. Um pacote Java suportado é algum que instale um arquivo da forma:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"Por exemplo, o java-1.4.2-gcj-compat é um pacote suportado porque instala:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Selecione o conjunto padrão de ferramentas Java para o sistema."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Configuração do conjunto de ferramentas Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Conjuntos de ferramentas Java instalados"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "O conjunto padrão de ferramentas Java pode ser configurado somente pelo usuário root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Fechar"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Altere o conjunto padrão de ferramentas Java"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Conjunto de ferramentas Java"
+

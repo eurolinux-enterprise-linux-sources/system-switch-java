@@ -1,0 +1,80 @@
+# French translation of system-switch-java tip
+# Copyright (C) 2008 Redhat, Inc.
+# This file is distributed under the same license as the system-switch-java package.
+#
+# Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java tip \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-01 11:23+0000\n"
+"PO-Revision-Date: 2008-09-01 17:45+0200\n"
+"Last-Translator: Robert-André Mauchin <zebob.m@pengzone.org>\n"
+"Language-Team: Fedora French <fedora-trans-fr@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "afficher une interface texte même si un affichage graphique est disponible"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Une tentative d'analyse de /var/lib/alternatives/java a échoué."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Aucun paquet Java pris en charge n'a été trouvé. Un paquet Java pris en charge est un "
+"paquet qui installe un fichier de la forme :\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$distributeur/bin/java\n"
+"\n"
+"Par exemple, java-1.4.2-gcj-compat est un paquet pris en charge car il installe :\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Sélection du jeu d'outils Java par défaut pour le système."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Configuration du jeu d'outils Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Jeux d'outils Java installés"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Le jeu d'outils Java par défaut peut seulement être défini par le root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "Valider"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Fermer"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Modifier le jeu d'outils Java par défaut"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Jeu d'outils Java"
+

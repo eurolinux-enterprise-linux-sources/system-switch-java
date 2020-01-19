@@ -1,0 +1,81 @@
+# translation of te.po to Telugu
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Krishna Babu K <kkrothap@redhat.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: te\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2008-10-09 18:28+0530\n"
+"Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "గ్రాఫిక్స్‍ ప్రదర్శన అందుబాటులో వున్నాకూడా టెక్స్ట్‍ ఇంటర్‌ఫేస్ ప్రదర్శించుము"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/javaను పార్శ్‍ చేసే ప్రయత్నం విఫలమైంది."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"ఎటువంటి మద్దతిచ్చు ప్యాకేజీలు కనుగొనబడలేదు.  మద్దతిచ్చు Java ప్యాకేజి ఈవిధమైన "
+"ఫైలును సంస్థాపిస్తుంది:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"ఉదాహరణకు,  java-1.4.2-gcj-compat మద్దతిచ్చు ప్యాకేజి యెంచేతంటే ఇది "
+"దీనిని సంస్థాపిస్తుంది:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "సిస్టమ్ కొరకు అప్రమేయ Java సాధనములసమితిని యెంపికచేయుము."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Java సాధనములసమితి ఆకృతీకరణము"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "సంస్థాపించిన Java సాధనములసమితి"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "అప్రమేయ Java సాధనములసమితి root వినియోగదారి ద్వారా మాత్రమే ఆకృతీకరించబడగలదు."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "సరే"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "మూయుము"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "అప్రమేయ Java సాధనములసమితిని మార్చుము"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Java సాధనములసమితి"
+

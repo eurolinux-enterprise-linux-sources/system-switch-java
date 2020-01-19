@@ -1,0 +1,81 @@
+# translation of system-switch-java.tip.or.po to Oriya
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Manoj Kumar Giri <mgiri@redhat.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip.or\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-22 03:22+0000\n"
+"PO-Revision-Date: 2008-09-22 16:12+0530\n"
+"Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
+"Language-Team: Oriya\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2;plural=(n!=1)\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "ଆଲେଖିକ ପ୍ରଦର୍ଶନ ଉପଲବ୍ଧ ଥିଲେ ମଧ୍ଯ ପାଠ୍ୟ ଅନ୍ତରାପୃଷ୍ଠ ଦର୍ଶାନ୍ତୁ"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/java କୁ ବିଶ୍ଳେଷଣ କରିବାର ଗୋଟିଏ ପ୍ରଚେଶ୍ଟା ବିଫଳ ହେଲା."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"କୌଣସି ସମର୍ଥିତ java ପ୍ୟାକେଜଗୁଡ଼ିକ ମିଳିଲା ନାହିଁ.  ଗୋଟିଏ ସମର୍ଥିତ java ପ୍ୟାକେଜ ଯାହାକି "
+"ନିମ୍ନଲିଖିତ ଆକାର ବିଶିଷ୍ଟ ଫାଇଲକୁ ସ୍ଥାପନ କରେ:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"ଉଦାହରଣ ସ୍ୱରୂପ, java-1.4.2-gcj-compat ଟି ଗୋଟିଏ ସମର୍ଥିତ ପ୍ୟାକେଜ କାରଣ ଏହା "
+"ସ୍ଥାପନ କରେ:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "ତନ୍ତ୍ର ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ java ଉପକରଣ ସେଟ ଚୟନକରନ୍ତୁ."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "java ଉପକରଣ ସେଟ ବିନ୍ୟାସ"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "ସ୍ଥାପିତ java ଉପକରଣ ସେଟଗୁଡ଼ିକ"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "କେବଳ ମୂଖ୍ୟ ଚାଳକ ଦ୍ୱାରା ପୂର୍ବନିର୍ଦ୍ଧାରିତ java ଉପକରଣ ସେଟ ବିନ୍ୟାସିତ ହୋଇପାରିବ."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "ବନ୍ଦକରନ୍ତୁ"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ java ଉପକରଣ ସେଟକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "java ଉପକରଣ ସେଟ"
+

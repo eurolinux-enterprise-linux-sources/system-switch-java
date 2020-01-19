@@ -1,0 +1,85 @@
+diff --git a/switch_java_functions.py.in b/switch_java_functions.py.in
+--- a/switch_java_functions.py.in
++++ b/switch_java_functions.py.in
+@@ -110,30 +111,35 @@
+ 
+ def get_java_identifiers():
+     java_identifiers = []
++    # indicates whether each java_identifier is a jdk or jre
++    jdks = []
+     best_identifier = None
+     alternatives, best = get_alternatives('java')
+-    java_expression = re.compile('/usr/lib/jvm/jre-([^/]*)/bin/java')
+-    for alternative in alternatives:
+-        java_search = java_expression.search(alternative)
+-        if java_search == None:
+-            # Skip unrecognized java alternative.
++    jre_expression = re.compile('/usr/lib/jvm/jre-([^/]+)/bin/java')
++    jdk_expression = re.compile('/usr/lib/jvm/java-([^/]+)/jre/bin/java')
++    best_indentifier_index = -1
++    for i in range(len(alternatives)):
++        alternative = alternatives[i]
++        jre_search = jre_expression.search(alternative)
++        jdk_search = jdk_expression.search(alternative)
++        java = None
++        if not jre_search == None:
++            java = jre_search.group(1)
++            jdks.append(False)
++        elif not jdk_search == None:
++            java = jdk_search.group(1)
++            jdks.append(True)
++        else:
+             continue
+-        java = java_search.group(1)
+         java_identifiers.append(java)
+-    if len(java_identifiers) > 0:
+-        # FIXME: best needs to be calculated as the best of the
+-        # recognized java alternatives.  Otherwise a custom-installed
+-        # highest-priority java alternative will result in
+-        # java_identifiers[best] causing an array index out-of-bounds
+-        # error.  custom-installed java alternatives are rare (maybe
+-        # non-existant) so this FIXME is low priority.  The best fix
+-        # is probably to pass the recognizing re expression to
+-        # get_alternatives.
+-        best_identifier = java_identifiers[best]
+-        java_identifiers.sort(cmp, get_sorting_name)
+-        initialize_alternatives_dictionaries(java_identifiers)
++        if i == best:
++            best_identifier_index = len(java_identifiers) - 1
++    identifiers_and_jdks = zip(java_identifiers, jdks)
++    if len(identifiers_and_jdks) > 0:
++        best_identifier = identifiers_and_jdks[best_identifier_index][0]
++        identifiers_and_jdks.sort(cmp, lambda i : get_sorting_name(i[0]))
++        initialize_alternatives_dictionaries(identifiers_and_jdks)
+     return java_identifiers, best_identifier
+-
+ def get_plugin_alternatives(plugin_alternatives, arch):
+     try:
+         alternatives, best = get_alternatives('libjavaplugin.so' + arch)
+@@ -233,16 +239,22 @@
+     vendor, version, arch = get_java_split(alternative)
+     return vendor + version + arch
+ 
+-def initialize_alternatives_dictionaries(java_identifiers):
++def initialize_alternatives_dictionaries(java_identifiers_and_jdks):
+     plugin_alternatives = get_plugin_alternatives({}, '')
+     javadocdir_alternatives = get_javadocdir_alternatives()
+     arch_found = False
+-    for java in java_identifiers:
++    for (java, is_jdk) in java_identifiers_and_jdks:
+         vendor, version, arch = get_java_split(java)
+-        JAVA[java] = '/usr/lib/jvm/jre-' + java + '/bin/java'
++        if is_jdk:
++            JAVA[java] = '/usr/lib/jvm/java-' + java + '/jre/bin/java'
++        else:
++            JAVA[java] = '/usr/lib/jvm/jre-' + java + '/bin/java'
+         # Command-to-alternative-name map to set default alternative.
+         ALTERNATIVES[JAVA[java]] = java
+-        JRE[java] = '/usr/lib/jvm/jre-' + java
++        if is_jdk:
++            JRE[java] = '/usr/lib/jvm/java-' + java + '/jre'
++        else:
++            JRE[java] = '/usr/lib/jvm/jre-' + java
+         jce = '/usr/lib/jvm-private/java-' + java\
+               + '/jce/vanilla/local_policy.jar'
+         if os.path.exists(jce):

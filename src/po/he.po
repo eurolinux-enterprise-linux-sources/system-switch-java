@@ -1,0 +1,79 @@
+# translation of system-switch-java.po to Hebrew
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 01:51+0000\n"
+"PO-Revision-Date: 2008-10-12 22:41GMT\n"
+"Last-Translator: Oron Peled <oron@actcom.co.il>\n"
+"Language-Team: Hebrew\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "הצג מנשק טקסט גם כאשר המנשק הגרפי זמין"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "שגיאה בניסיון לפענח את ‎/var/lib/alternatives/java."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"לא נמצאו חבילות Java נתמכות. חבילת Java נתמכת מתקינה קובץ במיקום:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"לדוגמא, java-1.4.2-gcj-compat היא חבילה נתמכת מכיוון שהיא מתקינה את:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "בחירת ברירת המחדל של ערכת ה-Java הכלל מערכתית."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "הגדרות ערכת ה-Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "ערכות ה-Java המותקנות"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr ""
+"הגדרת ערכת ה-Java שתשמש כברירת מחדל כלל מערכתית יכולה להתבצע רק על ידי root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "אישור"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "סגירה"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "שינוי ברירת המחדל של ערכת ה-Java"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "ערכת ה-Java"

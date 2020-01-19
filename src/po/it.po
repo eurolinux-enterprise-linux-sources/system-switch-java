@@ -1,0 +1,81 @@
+# translation of it.po to
+# Copyright (C) 2008 THE it'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the it package.
+# Silvio Pierro <perplesso82@gmail.com>, 2008.
+#  <perplesso82@gmail.com>, 2008.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: it\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-02 17:20+0000\n"
+"PO-Revision-Date: 2008-09-08 13:13+0200\n"
+"Last-Translator: Silvio Pierro <perplesso82@gmail.com>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "visualizza l'interfaccia di testo anche se è disponibile il display grafico"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Il tentativo di analizzare /var/lib/alternatives/java è fallito."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Sono stati trovati pacchetti Java non supportati.  Un pacchetto Java supportato è in grado di installare "
+"un file con un formato:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"Per esempio, java-1.4.2-gcj-compat è un pacchetto supportato perchè "
+"installa:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Seleziona il toolset predefinito di Java per il sistema."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Configurazione del toolset di Java"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Toolset di Java installati"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Il toolset predefinito di Java può essere configurato solo dall'utente root."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Chiudi"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Cambia il toolset predefinito di Java"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Toolset di Java"
+

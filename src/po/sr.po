@@ -1,0 +1,79 @@
+# Serbian translations for system-config-java
+# Copyright (C) 2006 Red Hat, Inc.
+# This file is distributed under the same license as the system-config-java package.
+# Miloš Komarčević <kmilos@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-java\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-03 18:39-0400\n"
+"PO-Revision-Date: 2008-08-31 17:20-0000\n"
+"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "прикажи текстуално сучеље иако је доступан графички приказ"
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "Покушај да се рашчлани /var/lib/alternatives/java није успео."
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"Нису пронађени подржани Java пакети.  Подржани Java пакет је онај који "
+"инсталира датотеку у облику:\n"
+"\n"
+"/usr/lib/jvm/jre-$верзија-$произвођач/bin/java\n"
+"\n"
+"На пример, java-1.4.2-gcj-compat је подржани пакет јер инсталира:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "Изаберите подразумевани комплет Java алата за систем."
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Подешавање комплета Java алата"
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "Инсталирани комплети Java алата"
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "Подразумевани комплет Java алата може подесити само root корисник."
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "У реду"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "Затвори"
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "Промените подразумевани комплет Java алата"
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Комплет Java алата"

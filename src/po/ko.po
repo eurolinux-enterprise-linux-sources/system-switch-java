@@ -1,0 +1,79 @@
+# translation of system-switch-java.tip.po to Korean
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Eunju Kim <eukim@redhat.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-switch-java.tip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-19 01:59+0000\n"
+"PO-Revision-Date: 2008-10-20 15:58+1000\n"
+"Last-Translator: Eunju Kim <eukim@redhat.com>\n"
+"Language-Team: Korean <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+
+#: ../switch_java_functions.py.in:34
+msgid "display text interface even if graphics display is available"
+msgstr "그래픽 디스플레이를 사용할 수 있어도 텍스트 인터페이스를 표시 "
+
+#: ../switch_java_functions.py.in:37
+msgid "An attempt to parse /var/lib/alternatives/java failed."
+msgstr "/var/lib/alternatives/java 구문 분석 시도 실패 "
+
+#: ../switch_java_functions.py.in:40
+msgid ""
+"No supported Java packages were found.  A supported Java package is one that "
+"installs a file of the form:\n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"For example, java-1.4.2-gcj-compat is a supported package because it "
+"installs:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+msgstr ""
+"지원되는 Java 패키지를 찾을 수 없습니다. 지원되는 Java 패키지는 다음과 같은 형식의 파일을 설치한 것입니다: \n"
+"\n"
+"/usr/lib/jvm/jre-$version-$vendor/bin/java\n"
+"\n"
+"예를 들어, java-1.4.2-gcj-compat는 다음과 같은 형식의 파일을 설치하므로 지원되는 패키지입니다:\n"
+"\n"
+"/usr/lib/jvm/jre-1.4.2-gcj/bin/java"
+
+#: ../switch_java_functions.py.in:51
+msgid "Select the default Java toolset for the system."
+msgstr "시스템에 해당하는 기본값 Java 툴셋을 선택합니다.  "
+
+#: ../switch_java_functions.py.in:52
+msgid "Java Toolset Configuration"
+msgstr "Java 툴셋 설정 "
+
+#: ../switch_java_functions.py.in:53
+msgid "Installed Java Toolsets"
+msgstr "설치된 Java 툴셋 "
+
+#: ../switch_java_functions.py.in:54
+msgid "The default Java toolset can only be configured by the root user."
+msgstr "기본값 Java 툴셋은 root 사용자에 의해서만 설정될 수 있습니다. "
+
+#: ../switch_java_functions.py.in:57
+msgid "OK"
+msgstr "OK"
+
+#: ../switch_java_functions.py.in:58
+msgid "Close"
+msgstr "종료 "
+
+#: ../system-switch-java.desktop.in.h:1
+msgid "Change the default Java toolset"
+msgstr "기본값 Java 툴셋 변경 "
+
+#: ../system-switch-java.desktop.in.h:2
+msgid "Java Toolset"
+msgstr "Java 툴셋 "
+
